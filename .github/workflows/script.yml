@@ -22,4 +22,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a Python script
+        env:
+          THIS_SECRET_QUOTE: ${{ secrets.THIS_SECRET_QUOTE }}
         run: python .github/workflows/pnpr1.py
